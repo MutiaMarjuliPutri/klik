@@ -122,6 +122,19 @@
             android:textColor="@color/white"
 
             />
+        <Button
+            android:id="@+id/btnRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnlistView"
+            android:layout_marginTop="20dp"
+            android:background="@color/design_default_color_secondary_variant"
+            android:backgroundTint="@color/white"
+            android:text="recycle view"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            />
+
 
     </RelativeLayout>
 

@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         val btnganjilgenap = findViewById<Button>(R.id.btnganjilgenap)
         val btnpassingdata= findViewById<Button>(R.id.btnpassingdata)
         val btnlistView= findViewById<Button>(R.id.btnlistView)
+        val btnRecyclerView = findViewById<Button>(R.id.btnRecyclerView)
 
 
 
@@ -53,6 +54,9 @@ class MainActivity : AppCompatActivity() {
         }
         btnlistView.setOnClickListener {
             startActivity(Intent(this, listView2::class.java))
+        }
+        btnRecyclerView.setOnClickListener {
+            startActivity(Intent(this, RecyclerView::class.java))
         }
 
     }

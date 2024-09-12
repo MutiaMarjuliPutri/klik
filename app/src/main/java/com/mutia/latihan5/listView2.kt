@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ListView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -29,6 +30,16 @@ class listView2 : AppCompatActivity() {
         //android layout ->
         listview.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, namaHewan)
 
+
+        // untuk bisa di klik setiap item dari listnya
+        listview.setOnItemClickListener(){
+                parent,view, position, id ->
+            Toast.makeText(this, "Anda memilih : ${namaHewan[position]}",
+                Toast.LENGTH_SHORT).show()
+
+        }
+
     }
+
 
 }
